@@ -1,0 +1,13 @@
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res)=>{
+
+  console.log('request received: '+JSON.stringify(req.headers));
+
+  res.send('hello world!');
+
+});
+
+app.listen(port, ()=> console.log('now listening on localhost:3000'));
