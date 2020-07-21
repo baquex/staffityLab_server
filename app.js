@@ -6,8 +6,9 @@ app.get('/', (req, res)=>{
 
   console.log('request received: '+JSON.stringify(req.headers));
 
+  res.write('test this...');
   res.send('hello world!');
 
 });
 
-app.listen(port, ()=> console.log('now listening on localhost:'+port));
+app.listen(port, ()=> console.log('the port is:'+port));
