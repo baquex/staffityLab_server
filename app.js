@@ -5,11 +5,11 @@ const db = require('./config');
 
 
 /***   CHANGE THE PORT TO 8080 FOR PROD */
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 
 
-app.get('/', (req, res)=>{
+app.get('/api/contact-form', (req, res)=>{
 
   console.log('request received: '+JSON.stringify(req.headers));
   
